@@ -1,0 +1,45 @@
+body {
+    font: Arial, sans-serif;
+
+}
+
+h1 {
+    color: rgb(46, 46, 117);
+}
+
+h2{
+    font-size: small;
+    position: c;
+}
+
+form {
+    margin: auto;
+    width: 400px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+form div + div{
+    margin-top: 1em;
+}
+
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+p{
+    font: small;
+}
+
+
+h2 {
+    background-color: rgb(46, 46, 117);
+}
+
+img {
+    
+}
