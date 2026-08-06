@@ -7,52 +7,112 @@
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-  <h1>Gestão de Estacionamento</h1>
+
+ <div class="inicial">
+<!--Menu Lateral-->
+<aside class="sidebar">
+  <div class="logo">
+    <img src="Icon-carro.svg" alt="carro">
+    <div>
+        <strong>Senac CEP</strong>
+        <small>PAPALÉO PARKING</small>
+    </div>
+    </div>
+
+<nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Consulta de Usuários</a>
+    <a href="#">Registro de Entrada/Saída</a>
+    <a href="#" class="ativo"> Cadastro Rápido</a>
+    <a hef="#">Histórico</a>
+    <a href="#">Alertas</a>
+</nav>
+
+<a href="#" class="sair">sair</a>
+</aside> 
+
+<!--conteúdo-->
+<main class="conteudo">
+<!--Cabeçalho-->
+<header>Gestão de Estacionamento</header>
+
   <p>Resgistre novos visitantes de forma ágil e segura.</p> <hr>
 
-  <img src="Foto de Perfil do Administrador.png" alt="perfil de administradora>"
-
+  <div class="administrador">
+  <img src="Foto de Perfil do Administrador.png" alt="perfil de administradora">
+  <div>
+    <strong>Admin Portaria</strong>
+    <small>Operador</small>
+  </div>
+  </div> 
+  
+  
     <form action="https://example/envio" method="post">
 
         <p><strong>Iformações Pessoais</strong></p> <hr>
         <label for="nome">Nome Completo</label>
-        <input type="text" id="text">
+        <input type="text" id="nome" placeholder="Ex: João da Silva Santos">
         
-
+       <div class="linha">
         <label for="cnh">CNH(Documento)</label>
-        <input type="text" id="text">
-
+        <input type="text" id="cnh" placeholder="00000000000000">
+       </div>
         
         <label for="nome">Telefone/WhatsApp</label>
-        <input type="text" id="text">
+        <input type="text" id="telefone" placeholder="(11) 99999-9999">
+        
+        
+        <p class="titulo-formulario"><strong>Dados do Veículo</strong></p> <hr>
 
-        <p>Dados do Veículo</p> <hr>
-
+    <div class="linha">
+        <div>
         <label for="placa">placa</label>
-        <input type="text" id="text">
+        <input type="text" id="placa" placeholder="ABC-1234">
+        </div>
 
+        <div>
         <label for="modelo">Modelo</label>
-        <input type="text" id="text">
+        <input type="text" id="modelo" placeholder="Ex:Gol, Civic, Corolla">
+        </div>
 
-        
-        <label for="nome">Marca</label>
-        <input type="text" id="text">
+        <div>
+        <label for="marca">Marca</label>
+        <select id="marca">
+        <option>
+            Selecione a Marca
+        </option>
+        <option>Volkswagen</option>
+        <option>Fiat</option>
+        <option>Chevrolet</option>
+        <option>Toyota</option>
+        <option>Honda</option>
+        </select>
+        </div>
 
-        
+        <div>
         <label for="nome">cor</label>
-        <input type="text" id="text">
+        <input type="text" id="cor" placeholder="Ex:Branco, Preto, Prata">
+        </div>
+        </div>
         
-       <button>
-            <p>Limpar Campos<p>
+        <!--Botões-->
+       <div class="botoes">
+       <button type ="reset">
+            <p>Limpar Campos</p>
         </button>
 
-        <button>
+        <button type ="submit">
             <p>Cadastrar Visitante</p>
         </button>
+        </div>
 
-        <h3>O visitante será automaticamente registrado no sistema como "Aguardando Entrada."</h3>
     </form>
 
-   
-</body>
+    <p class="aviso">
+        O visitante será automaticamente registrado no sistema como "Aguardando Entrada.
+    </p>
+    </div>
+</main>
+
+</body> 
 </html>
