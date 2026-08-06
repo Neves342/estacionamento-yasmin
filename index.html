@@ -7,30 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Senac CEP Papaléo</h1>
-    <p>Gestão de Estacionamento</p>
+    
+    <!--início da página de login-->
+<div class="tela-principal"> 
+     
+    <div class="imagem-esquerda">
+      <img src="Professional parking facility background.png" alt="Imagem de login">
+    </div>
 
-<img src="Professional parking facility background.png" alt="Imagem de login">
+     <div class="pagina-de-dados">  <!--Aqui é a div só de entradas-->
 
-    <form action="example-formulario" method="post"
-    <div>
+       <div class="box-login">
+          <h1>Senac CEP Papaléo</h1>
+          <h2 class="media">Gestão de Estacionamento</h2><br>
+       </div>
+   
+     <form action="example-form" method="post">
+      <div class="caixa-form">
         <label for="cpf/cnh">CPF ou CNH</label>
-        <input type="text" id="text">
-    </div>
+        <input type="text" id="text" placeholder="000.000.000.00">
+      </div>
 
-    <div>
+      <div class="caixa-form">
         <label for="senha">Senha</label>
-        <input type="text" id="text">
+        <input type="password" id="password" placeholder=".......">
+     </div>
+
+     <div class="caixa-pequena" >
+        <input type="checkbox" id="lembrar">
+        <label for="lembrar">Lembrar neste dispositivo</label>
+     </div>
+
+     <div class="caixa-form">
+        <button>Entrar</button>
+     </div>
+
+     <p>Todos os direitos reservados</p>
+      </form>
     </div>
-</form>
+</div> <!--fechamento da principal-->
 
-<div>
-    <button>
-        <h1>Entrar</h1>
-    </button>
-</div>
 
-<p>Todos os direitos reservados</p>
+
 
 </body>
 </html>

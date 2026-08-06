@@ -1,17 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size:small;
+}
+
+/*reseta*/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
 h1 {
     font-family: Arial, sans-serif;
-    color: rgb(53, 53, 148);
-    position: right;
+    color: rgb(53, 53, 148);  
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
-p{
-    font-size: small;
-    position: ;
+/*Modifica o h2*/
+.media{
+    font-size: 25px;
+    color: rgb(92, 92, 92);
+    margin-bottom: 10px;
 }
 
-img{
-    position: left;
-    text-emphasis-position: ;
+/*caixa*/
+.tela-principal {
+    display: flex;
+}
+
+/*Modifica a entrada dos dados dos usuários*/
+.pagina-de-dados {
+    flex: 1;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 5px;
+    border-radius: 5px;
+    gap: 4px;
+    padding: 5px;
     
+ 
 }
+
+
+.caixa-form input {
+    height: 35px;
+    border: 2px solid #5b5b5b;
+    background-color: rgb(225, 225, 225);
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+
+/*No momento, aumento de bolinhas*/
+input[type="password"] {
+    font-size: 20px;
+    letter-spacing: 4px;
+    gap: 10px;
+
+}
+ 
+
+
+
 
