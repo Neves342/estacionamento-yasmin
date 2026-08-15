@@ -39,20 +39,14 @@ h1 {
     justify-content: center;
 }
 
-.login-form {
-    height:
-}
-
 .caixa-form {
     display: flex;
     flex-direction: column;
     width: 400px;
     margin: 5px;
     border-radius: 5px;
-    gap: 1px;
-    padding: 2px;
-    background: #fff;
-    
+    gap: 4px;
+    padding: 5px;
     
  
 }
@@ -60,7 +54,7 @@ h1 {
 
 .caixa-form input {
     height: 35px;
-    border: 2px solid #e7e4e4;
+    border: 2px solid #5b5b5b;
     background-color: rgb(225, 225, 225);
     margin: 10px;
     border-radius: 5px;
@@ -69,17 +63,13 @@ h1 {
 
 
 /*No momento, aumento de bolinhas*/
-form input[type="password"] {
-   
-}
-
-
-
-.icon {
-    margin-top: auto;
-    gap: 8px;
+input[type="password"] {
+    font-size: 20px;
+    letter-spacing: 4px;
+    gap: 10px;
 
 }
+ 
 
 
-}
+
