@@ -1,42 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font: Arial, sans-serif;
+    margin: 0;
+    background-color: #f3f4f6;
+}
 
+p{
+    font-size: small;
 }
 
 h1 {
     color: rgb(46, 46, 117);
+    margin-top: 0;
 }
 
 h2{
     font-size: small;
-    position: c;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(46, 46, 117);
 }
 
-form {
-    margin: auto;
-    width: 400px;
+h3 {
+   color: rgb(1, 1, 26);
+   
+}
+
+
+
+
+
+.inicial {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: white;
     padding: 30px;
-    border: 1px solid #ccc;
-    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #2255bb;
 }
 
-form div + div{
-    margin-top: 1em;
+.logo-caixa {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.icone-carro {
+    background-color: #0b3168;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-carro img {
+    width: 24px;
+    height: 24px;
+}
+
+/*Separando todos confunde menos a cabeça*/
+.texto-logo h1 {
+    font-size: 18px;
+    color: #0b3168;
+    margin: 0;
+    font-weight: bold;
+
+
+}
+
+.sair {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+}
+
+.linha1 {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+    
 }
 
 
-label {
-    display: inline-block;
-    width: 90px;
+.administrador {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.administrador div {
+    display: flex;
+    flex-direction: column;
     text-align: right;
 }
 
-p{
-    font: small;
+.links-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.links-menu a {
+    text-decoration: none;
+    color: rgb(46, 46, 117);
+}
+
+.sair {
+    margin-top: auto;
+    text-decoration: none;
+    color: #cc0000;
+}
+
+/*Espaçamento pro bloco principal*/
+.conteudo {
+    flex: 1;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
-h2 {
-    background-color: rgb(46, 46, 117);
+
+/*Ajustar as caixas de entrada*/
+form {
+    margin:0;
+    width: 100%;
+    max-width: 100%;
+    padding: 60px 40px;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
 }
+
+.conteudo {
+    padding: 40px;
+}
+
+/*Vamos ao entendimento deste*/
+
+label {
+    display: block;
+    width: auto;
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #4b5563;
+}
+
+
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    background-color: #f3f4f6;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+
+
+.linha-secundaria {
+  display: flex !important;
+  gap: 20px;
+  width: 100%;
+  margin-top: 1em;
+ 
+}
+
+
+.linha {
+  display: flex !important;
+  gap: 20px;
+  width: 100%;
+  flex-direction: row;
+}
+
+.linha > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #0f172a;
+    color: white;
+    border: none;
+}
+
+
+.links-menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #495057;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
 

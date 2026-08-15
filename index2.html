@@ -11,90 +11,111 @@
  <div class="inicial">
 <!--Menu Lateral-->
 <aside class="sidebar">
-  <div class="logo">
-    <img src="Icon-carro.svg" alt="carro">
-    <div>
-        <strong>Senac CEP</strong>
-        <small>PAPALÉO PARKING</small>
-    </div>
-    </div>
 
-<nav>
-    <a href="#">Dashboard</a>
-    <a href="#">Consulta de Usuários</a>
-    <a href="#">Registro de Entrada/Saída</a>
-    <a href="#" class="ativo"> Cadastro Rápido</a>
-    <a hef="#">Histórico</a>
-    <a href="#">Alertas</a>
+    <div class="logo-caixa">
+        <div class="icone-carro">
+            <img src="Icon-registrar-entradas-e-saidas.svg" alt="icone de carro">
+        </div>
+        <div class="texto-logo">
+            <h1>Senac CEO</h1>
+            <span>PAPALÉO PARKING</span>
+        </div>
+    </div>
+       
+   
+
+<nav class="links-menu">
+    <a href="#"><img src="Icon-dashboard.svg" alt="Dashboard" class="icone-link">Dashboard</a>
+    <a href="#" class="consulta"><img src="Icon-consultar-usuarios (1).svg" alt="icone de usuario">Consulta de Usuários</a>
+    <a href="#"><img src="Icon-registrar-entradas-e-saidas.svg" alt="icone de entrada e saida">Registro de Entrada/Saída</a>
+    <a href="#" class="ativo"><img src="Icon-cadastro-rapido.svg" alt="icone de cadastro">Cadastro Rápido</a>
+    <a hef="#"><img src="Icon-historico.svg" alt="icone de histórico">Histórico</a>
+    <a href="#"><img src="Icon-alertas.svg" alt="icone de alerta">Alertas</a>
 </nav>
 
-<a href="#" class="sair">sair</a>
+
+<a href="#" class="sair"><img src="Icon-sair.svg" alt="icone de sair">sair</a>
 </aside> 
 
 <!--conteúdo-->
 <main class="conteudo">
-<!--Cabeçalho-->
-<header>Gestão de Estacionamento</header>
+<header class="conteudo-primeiro">
+    <h1>Gestão de Estacionamento</h1>
+    <div class="linha1"></div>
+</header>
 
-  <p>Resgistre novos visitantes de forma ágil e segura.</p> <hr>
+<div class="cartão para cadastro">
+    <h1>Cadastro Rápido</h1>
+<p>Resgistre novos visitantes de forma ágil e segura.</p> 
+
+  
 
   <div class="administrador">
-  <img src="Foto de Perfil do Administrador.png" alt="perfil de administradora">
-  <div>
-    <strong>Admin Portaria</strong>
-    <small>Operador</small>
-  </div>
+      <div>
+        <strong>Admin Portaria</strong>
+        <small>Operador</small>
+      </div>
+        <img src="Foto de Perfil do Administrador.png" alt="perfil de administradora">
   </div> 
   
-  
+   <!--Formulário de inscrição-->
+   
     <form action="https://example/envio" method="post">
-
-        <p><strong>Iformações Pessoais</strong></p> <hr>
+          <div>
+        <h3><img src="Icon-informacoes-pessoais.svg" alt="icone de informações pessoais">Iformações Pessoais</h3> <hr>
         <label for="nome">Nome Completo</label>
         <input type="text" id="nome" placeholder="Ex: João da Silva Santos">
+          </div>
         
-       <div class="linha">
+          <div class="linha">
+            <div>
         <label for="cnh">CNH(Documento)</label>
         <input type="text" id="cnh" placeholder="00000000000000">
-       </div>
+            </div>
         
+          <div>
         <label for="nome">Telefone/WhatsApp</label>
         <input type="text" id="telefone" placeholder="(11) 99999-9999">
+          </div>
+          </div>
         
-        
-        <p class="titulo-formulario"><strong>Dados do Veículo</strong></p> <hr>
+         <h3 class="titulo-formulario"><img src="Icon-carro.svg" alt="icone de carro">Dados do Veículo</h3>
 
-    <div class="linha">
-        <div>
+          <div class="linha">
+            <div>
         <label for="placa">placa</label>
         <input type="text" id="placa" placeholder="ABC-1234">
-        </div>
+            </div>
 
-        <div>
+          <div>
         <label for="modelo">Modelo</label>
         <input type="text" id="modelo" placeholder="Ex:Gol, Civic, Corolla">
-        </div>
+          </div>
+      </div>
 
+       <!--Terceria linha-->
+    <div class="linha">
         <div>
         <label for="marca">Marca</label>
         <select id="marca">
-        <option>
+          <option>
             Selecione a Marca
-        </option>
-        <option>Volkswagen</option>
-        <option>Fiat</option>
-        <option>Chevrolet</option>
-        <option>Toyota</option>
-        <option>Honda</option>
+          </option>
+          <option>Volkswagen</option>
+          <option>Fiat</option>
+          <option>Chevrolet</option>
+          <option>Toyota</option>
+          <option>Honda</option>
         </select>
         </div>
 
-        <div>
+         <div>
         <label for="nome">cor</label>
         <input type="text" id="cor" placeholder="Ex:Branco, Preto, Prata">
-        </div>
-        </div>
-        
+         </div>
+      </div>
+
+
         <!--Botões-->
        <div class="botoes">
        <button type ="reset">
@@ -104,11 +125,11 @@
         <button type ="submit">
             <p>Cadastrar Visitante</p>
         </button>
-        </div>
+    </div>
 
     </form>
 
-    <p class="aviso">
+    <p class="aviso"><img src="Icon-!.svg" alt="icone de informação"> 
         O visitante será automaticamente registrado no sistema como "Aguardando Entrada.
     </p>
     </div>
