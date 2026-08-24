@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+.inicial {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.links-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.links-menu a {
+    text-decoration: none;
+    color: rgb(46, 46, 117);
+    align-items: center !important;
+    font-family: sans-serif;
+    
+  
+    
+
+}
+
+.logo-caixa {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.links-menu a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.sair {
+    margin-top: auto;
+    text-decoration: none;
+    color: #cc0000;
+}
+
+
+.sidebar {
+    width: 280px;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #b6b9be;
+}
+
+
+.administrador {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.administrador div {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+
+
+.icone-carro {
+    color:aliceblue;
+    background-color: #123f7d;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+}
+
+.icone-carro img {
+    width: 24px;
+    height: 24px;
+}
+
+/*Separando todos confunde menos a cabeça*/
+.texto-logo h1 {
+    font-size: 18px;
+    color: #0b3168;
+    font-weight: bold;
+
+}
+
+.sair {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+}
+
+
+
+   
+

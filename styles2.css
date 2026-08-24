@@ -169,7 +169,7 @@ label {
 }
 
 
-
+/*Isso é um passo diferente*/
 input[type="text"], select {
     width: 100%;
     padding: 10px;
@@ -227,7 +227,7 @@ button[type="submit"] {
 .links-menu a {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     text-decoration: none;
     color: #495057;
     padding: 12px 16px;
